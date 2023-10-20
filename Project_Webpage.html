@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project_Styles.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <title>D-RO</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Welcome to D-RO</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#jokes">Jokes</a></li>
+                <li><a href="#image">Image</a></li>
+                <li><a href="#survey">Survey</a></li>
+                <li><a href="#application">Job Application</a></li>
+                <li><a href="#article">Article</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="jokes">
+        <h2>Exploring the Lighter Side of Coding</h2>
+        <p>Why did the web developer go broke? Because he lost his cache!</p>
+    </section>
+
+    <section id="image">
+        <figure>
+            <figcaption>The Cosmos.</figcaption>
+            <img src="WHOA.PNG" alt="Awe-Inspiring Space" title="Time is but a stubborn illusion">
+        </figure>
+    </section>
+
+    <section id="link">
+        <p>Don't click here</p>
+        <a href="https://www.guthib.com">Here</a>
+    </section>
+
+    <section id="quotes">
+        <h3>Quote of the day:</h3>
+        <h4>Life is like riding a bicycle. To keep your balance you must keep moving.</h4>
+    </section>
+
+    <button id="toggle-quote"class="button">Toggle Quote</button>
+
+    <section id="data-table">
+        <h2>Data Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Population</th>
+                    <th>Area (sq km)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>USA</td>
+                    <td>340,542,955</td>
+                    <td>9,826,675</td>
+                </tr>
+                <tr>
+                    <td>China</td>
+                    <td>1,425,522,881</td>
+                    <td>9.597.000</td>
+                </tr>
+                <tr>
+                    <td>India</td>
+                    <td>1,432,599,330</td>
+                    <td>3.287.000</td>
+                </tr>
+
+                <tr>
+                    <td>Cambodia</td>
+                    <td>16,998,504</td>
+                    <td>181,035</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </section>
+
+    <section id="intro">
+        <h1>Quick Survey: <br> Dream Destination</h1>
+    </section>
+
+    <section id="survey">
+        <h2>Discover Your Dream Travel Destination</h2>
+        <p>Answer a few questions and find out your Dream Destination</p>
+        
+        <form action="submit_interesting_survey.php" method="POST">
+            <h3>Question 1: What type of scenery do you prefer?</h3>
+            <label>
+                <input type="radio" name="scenery_type" value="beach" required> Beaches and coastlines
+            </label>
+            <label>
+                <input type="radio" name="scenery_type" value="mountain"> Majestic mountains
+            </label>
+            
+            <h3>Question 2: What's your ideal weather?</h3>
+            <label>
+                <input type="radio" name="weather" value="warm" required> Warm and sunny
+            </label>
+            <label>
+                <input type="radio" name="weather" value="cool"> Cool and crisp
+            </label>
+            
+            <h3>Question 3: Choose your travel companions:</h3>
+            <label>
+                <input type="checkbox" name="companions[]" value="family"> Family
+            </label>
+            <label>
+                <input type="checkbox" name="companions[]" value="friends"> Friends
+            </label>
+            <label>
+                <input type="checkbox" name="companions[]" value="solo"> Solo adventure
+            </label>
+            
+            <h3>Question 4: What kind of activities do you enjoy?</h3>
+            <label>
+                <input type="checkbox" name="activities[]" value="relaxation"> Relaxation and spa
+            </label>
+            <label>
+                <input type="checkbox" name="activities[]" value="adventure"> Adventure and exploration
+            </label>
+            <label>
+                <input type="checkbox" name="activities[]" value="culture"> Immersing in local culture
+            </label>
+            
+            <input type="submit" value="Discover Your Dream Destination">
+        </form>
+    </section>
+    
+
+    <section id="application">
+        <h3>So you scrolled all the way down here, might as well apply for a job at D-RO</h3>
+        <h2>Job Application Form</h2>
+        <form>
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br> 
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="subject">Subject/Position:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+
+            <label for="experience">Years of Experience:</label>
+            <input type="number" id="experience" name="experience" required><br><br>
+
+            <label for="previous_salary">Previous Salary:</label>
+            <input type="text" id="previous_salary" name="previous_salary" required><br><br>
+
+            <label for="qualification">Educational Qualification:</label>
+            <textarea id="qualification" name="qualification" rows="4" required></textarea><br><br>
+
+            <label for="bio_data">Bio Data:</label>
+            <textarea id="bio_data" name="bio_data" rows="4" required></textarea><br><br>
+
+            <label for="additional_info">Additional Information:</label>
+            <textarea id="additional_info" name="additional_info" rows="4"></textarea><br><br>
+            <label for="interview_date">Preferred Interview Date:</label>
+            <input type="date" id="interview_date" name="interview_date" required><br><br>
+            <label for="interview_time">Preferred Interview Time:</label>
+            <input type="time" id="interview_time" name="interview_time" required><br><br>
+
+            <input type="submit" value="Submit Application">    
+        </form>
+    </section>
+        
+    <section id="main">
+        <h1>Climate Change</h1>
+        <article>
+            <p id="article">
+                Climate change is often cast as a prediction made by complicated computer models. But the scientific basis for climate change is much broader, 
+                and models are actually only one part of it (and, for what it's worth, they're surprisingly accurate).
+            </p>
+        </article>
+    
+    </section>  
+    <div class="pagination">
+        <a href="#jokes">1</a>
+        <a href="#image">2</a>
+        <a href="#survey">3</a>
+        <a href="#application">4</a>
+        <a href="#article">5</a>
+    </div>
+
+    <script>
+        const toggleQuoteButton = document.querySelector('#toggle-quote');
+        const quoteSection = document.querySelector('#quotes');
+
+        toggleQuoteButton.addEventListener('click', () => {
+            quoteSection.classList.toggle('hidden');
+        });
+    </script>
+    <footer>
+        <p>&copy; 2023 D-RO. All rights reserved.</p>
+    </footer>
+</body>
+</html>

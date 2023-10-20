@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #769ada;
+    color: #333;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #007acc;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    animation: pulse 4s ease-in-out infinite;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo {
+    flex: 1; /* Expands to fill available space */
+    text-align: left;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #005faa;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 2rem;
+    text-align: left;
+}
+
+#jokes {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    padding: 1.5rem;
+    text-align: left;
+    margin: 0 auto;
+    
+}
+
+.caption {
+    font-size: 1.2rem;
+}
+
+#image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    animation: zoomIn 2s ease-in-out infinite alternate;
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(0.9); 
+    }
+}
+
+#link {
+    background-color: #eee;
+    padding: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    margin: 0 auto;
+}
+
+#link a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+#quotes {
+    background-color: #f7f7f7;
+    padding: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#quotes.hidden {
+    display: none;
+}
+
+.button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005faa;
+}
+
+#data-table {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #007acc;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+    
+}
+#intro {
+    background-color: #007acc;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    margin: 0 auto;
+}
+
+#survey {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    margin: 0 auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+    background-color: #005faa;
+}
+main{
+    text-align: left;
+}
+article {
+    background-color: white;
+    text-align: center;
+    padding: 30px 25px 20px 20px;
+    margin: 20px;
+    border: 2px solid #333; 
+    box-shadow: 0 2px 4px black; 
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #007acc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #005faa;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: inherit;
+    margin-bottom: inherit;
+}
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+    header {
+        flex-direction: column;
+    }
+}
+@keyframes headerBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); 
+    }
+}
+@keyframes pulse {
+    0% {
+        background-color: #007acc;
+    }
+    50% {
+        background-color: #005faa; 
+    }
+    100% {
+        background-color: #007acc;
+    }
+}
